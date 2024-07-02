@@ -35,13 +35,13 @@
     <ClInclude Include="Header\GameService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Header\ServiceLocator.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Header\GraphicService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Header\EventService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\ServiceLocator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,21 +2,6 @@
 #include "GameService.h"
 #include "GraphicService.h"
 
-bool EventService::isGameWindowOpen()
-{
-    return game_window != nullptr;
-}
-
-bool EventService::gameWindowWasClosed()
-{
-    game_event.type == sf::Event::Closed;
-}
-
-bool EventService::hasQuitGame()
-{
-    return (isKeyboardEvent() && pressEscapeKey());
-}
-
 
 EventService::EventService()
 {
@@ -58,4 +43,19 @@ bool EventService::pressEscapeKey()
 bool EventService::isKeyboardEvent()
 {
     return game_event.type == sf::Event::KeyPressed;
+}
+
+bool EventService::isGameWindowOpen()
+{
+    return game_window != nullptr;
+}
+
+bool EventService::gameWindowWasClosed()
+{
+    return game_event.type == sf::Event::Closed;
+}
+
+bool EventService::hasQuitGame()
+{
+    return (isKeyboardEvent() && pressEscapeKey());
 }

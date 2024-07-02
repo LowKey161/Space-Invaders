@@ -35,11 +35,6 @@ void GameService::ignite()
 	initialize();
 }
 
-void GameService::update()
-{
-	service_locator->update();
-}
-
 void GameService::render()
 {
 	game_window->clear(service_locator->getGraphicService()->getWindowColor());
@@ -54,6 +49,8 @@ bool GameService::isRunning()
 
 void GameService::update()
 {
+	//service_locator->getEventService()->processEvents();
+
 	service_locator->getEventService()->processEvents();
 
 	service_locator->update();
