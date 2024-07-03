@@ -134,6 +134,7 @@
   <ItemGroup>
     <ClCompile Include="Source\EventService.cpp" />
     <ClCompile Include="Source\GraphicService.cpp" />
+    <ClCompile Include="Source\PlayerService.cpp" />
     <ClCompile Include="Source\ServiceLocator.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Source\GameService.cpp" />
@@ -144,6 +145,7 @@
     </ClInclude>
     <ClInclude Include="Header\GraphicService.h" />
     <ClInclude Include="Header\EventService.h" />
+    <ClInclude Include="Header\PlayerService.h" />
     <ClInclude Include="Header\ServiceLocator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

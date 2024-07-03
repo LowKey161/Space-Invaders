@@ -55,6 +55,11 @@ GraphicService* ServiceLocator::getGraphicService()
 	return graphic_service;
 }
 
+PlayerService* ServiceLocator::getPlayerService()
+{
+	return player_service;
+}
+
 EventService* ServiceLocator::getEventService()
 {
 	return event_service;

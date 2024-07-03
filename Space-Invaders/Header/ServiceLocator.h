@@ -1,6 +1,7 @@
 #pragma once
 #include "../../Header/GraphicService.h"
 #include "../../Header/EventService.h"
+#include "../../Header/PlayerService.h"
 
 class EventService;
 class GraphicService;
@@ -14,6 +15,7 @@ private:
     
     EventService* event_service;
     GraphicService* graphic_service;
+    PlayerService* player_service;
 
     // Constructor for initializing the ServiceLocator.
     ServiceLocator();
@@ -35,5 +37,6 @@ public:
     // Methods to Get Specific Services: 
     EventService* getEventService();   // Retrieve the EventService instance
     GraphicService* getGraphicService();   // Retrieve the GraphicService instance
+    PlayerService* getPlayerService();
 
 };
