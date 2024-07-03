@@ -2,6 +2,7 @@
 #include "../../Header/GraphicService.h"
 #include "../../Header/EventService.h"
 #include "../../Header/PlayerService.h"
+#include "../../Header/TimeService.h"
 
 class EventService;
 class GraphicService;
@@ -16,6 +17,7 @@ private:
     EventService* event_service;
     GraphicService* graphic_service;
     PlayerService* player_service;
+    TimeService* time_service;
 
     // Constructor for initializing the ServiceLocator.
     ServiceLocator();
@@ -38,5 +40,6 @@ public:
     EventService* getEventService();   // Retrieve the EventService instance
     GraphicService* getGraphicService();   // Retrieve the GraphicService instance
     PlayerService* getPlayerService();
+    TimeService* getTimeService();
 
 };
